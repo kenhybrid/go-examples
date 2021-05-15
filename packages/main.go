@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"go-examples/packages/adder"
 	"go-examples/packages/strutil"
 	"math"
-
-	"github.com/lessons/packages/strutil"
 )
 
 func main() {
@@ -16,4 +15,6 @@ func main() {
 	// import custom built packages
 	// a package to reverse a string
 	fmt.Println(strutil.Reverse("HELLO THERE"))
+	// adding numbers package
+	fmt.Println(adder.Add(4, 9))
 }
