@@ -9,13 +9,13 @@ func main() {
 	sum := Adder(1, 3)
 	fmt.Println(sum)
 	// call a function of two arguments
-	a, b := GetDescription()
+	a, b := GetDescription("baraka")
 	fmt.Println(a, b)
 	// exluding a value returen using an underscore
-	_, c := GetDescription()
+	_, c := GetDescription("baraka")
 	fmt.Println(c)
 	// or
-	d, _ := GetDescription()
+	d, _ := GetDescription("baraka")
 	fmt.Println(d)
 }
 
@@ -26,8 +26,8 @@ func Adder(a int, b int) int {
 }
 
 // multiple return types
-func GetDescription() (string, int) {
-	a := "Goodmorning the time is"
+func GetDescription(name string) (string, int) {
+	a := "Goodmorning " + name + " the time is"
 	b := 8
 	return a, b
 }
